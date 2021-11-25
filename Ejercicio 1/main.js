@@ -9,7 +9,7 @@ function main() {
     (isRunning = true)
     if (jugar_partida == 1) {
       jugador = array_jugador()
-      comprobador() 
+      comprobador(jugador) 
       intentos++
       alert_output("Llevas " + intentos + " Intentos")
     }
