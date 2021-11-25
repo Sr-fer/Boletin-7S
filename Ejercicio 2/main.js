@@ -1,7 +1,7 @@
 function main() {
+    var Jugar = prompt("Quieres jugar a El precio justo? 1:Si 2:No")
     do {
         (isRunning = true)
-        var Jugar = prompt("Quieres jugar a El precio justo? 1:Si 2:No")
         if (Jugar == 1) {
             alert("Tienes que adiviar los precios de los objetos que se anuncien por pantalla sin pasarte")
             Numero_Aleatorio = genereador_precios()
@@ -29,9 +29,9 @@ function main() {
                 alert("Has fallado")
                 return main()
             }
-            if (Jugar == 2) {
-                isRunning = false
-            }
+        }
+        if (Jugar == 2) {
+            isRunning = false
         }
     }
     while (isRunning == true)
